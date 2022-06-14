@@ -15,9 +15,9 @@
       <?php 
         while($song = $results->fetch(PDO::FETCH_ASSOC)) {
       ?>
-      <div class="col-md-5">
+      <div   min-width: 936px;  min-height: 475px;>
         <a href="songchord.php?id=<?php echo $song['SongID'];?> ">
-        <h4 style="color:white"><?php echo $song['Title'];?></h4>
+        <h4 style="color:white"><?= $song['Title'];?></h4>
         </a>
       </div>
       <?php } ?>

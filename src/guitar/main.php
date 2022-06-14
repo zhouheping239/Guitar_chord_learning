@@ -4,6 +4,8 @@
   require_once './include/header.php';
   require_once './include/config.php';
 
+  $top = $pass->getTopSongs();
+  $feature = $pass->getFeatureSongs();
 ?>
  
 <body>
@@ -20,36 +22,17 @@
       <tr>
         <th>Singer</th>
         <th>Title</th>
-        <th>Genre</th>
       </tr>
     </thead>
     <tbody>
+      <?php while($t = $top->fetch(PDO::FETCH_ASSOC)){ ?>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td> <a style="color:white"href="songchord.php?id=<?php echo $t['SongID'];?> ">
+        <?php echo $t['Title']?> </a> </td> 
+        <td><?php echo $t['SingerName']?></td>
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-    </tbody>
+      <?php }?>
+      </tbody>
   </table>
 </div>
     </div>

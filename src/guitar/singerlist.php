@@ -1,6 +1,6 @@
 <?php
 
-  $title = 'songlist';
+  $title = 'singerlist';
   require_once './include/header.php';
   require_once './include/config.php';
 
@@ -16,7 +16,7 @@
         while($singer = $results->fetch(PDO::FETCH_ASSOC)) {
       ?>
       <div   min-width: 936px;  min-height: 475px;>
-        <a href = "google.com">
+        <a href = "main.php">
         <h4 style="color:white"><?= $singer['SingerName'];?></h4>
         </a>
       </div>

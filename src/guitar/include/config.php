@@ -14,5 +14,5 @@
      }
 
      require_once 'pass.php';
-     $pass = new pass($pdo)
+     $pass = new pass($pdo);
 ?>

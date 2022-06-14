@@ -42,23 +42,11 @@
         <li class="nav-item">
           <a class="nav-link" href="./singerlist.php">Singer List</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Chords
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Rock</a>
-            <a class="dropdown-item" href="#">Pop</a>
-            <a class="dropdown-item" href="#">Jazz</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Others</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="./chordtable.php">Chords</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
   </nav>
 </div>
